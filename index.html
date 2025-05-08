@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Tablero - Escaleras y Serpientes</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="./src/img/iconoGame.png" type="image/x-icon">
+    <script src="/src/Libs/three.min.js"></script>
+    <script src="/src/loaders/MTLLoader.js"></script>
+    <script src="/src/loaders/OBJLoader.js"></script>
+
+</head>
+
+<body>
+    <!-- Menú de inicio -->
+    <div id="menu">
+        <h1>Escaleras y Serpientes</h1>
+        <button onclick="startGame(1)">1 Jugador</button>
+        <button onclick="startGame(2)">2 Jugadores</button>
+        <h2>Johan David Medina Valderrama - 101239</h2>
+        <h2>Juan Sebastian Quintero - 73883</h2>
+    </div>
+
+    <!-- UI -->
+    <div id="ui">
+        <div id="scoreBoard">
+            <div><strong>Jugador 1 (🔴):</strong> <span id="score1">0</span></div>
+            <div><strong>Jugador 2 (🔵):</strong> <span id="score2">0</span></div>
+            
+        </div>
+        <button id="rollButton" style="display:none;">Tirar dado 🎲</button>
+        <br>
+        <div id="diceResult">-</div>
+        <div id="status">Player 1's turn</div>
+    </div>
+
+ <!-- Canvas para el tablero 3D  -->
+    <div id="boardContainer"></div>
+    <div id="container">
+        <div id="gameCanvas"></div>
+        <div id="ui">
+<!--             <button id="rollBtn">Roll Dice 🎲</button>  -->
+          <!--   <div id="diceResult">-</div> -->
+          <!--  <div id="status">Player 1's turn</div> -->
+        </div>
+    </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/examples/js/loaders/MTLLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/examples/js/loaders/OBJLoader.js"></script>
+
+    <script src="./src/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
